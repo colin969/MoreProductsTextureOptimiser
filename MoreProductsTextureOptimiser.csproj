@@ -32,7 +32,7 @@
   <Target Name="CreateZIP" AfterTargets="Publish">
     <Copy
       SourceFiles="$(TargetDir)$(ProjectName).dll;$(TargetDir)publish/SkiaSharp.dll;libraries/libSkiaSharp.dll"
-      DestinationFolder="dist" />
+      DestinationFolder="dist/BepInEx/plugins/" />
 
     <ZipDirectory
       Overwrite="true"
